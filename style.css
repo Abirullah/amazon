@@ -1,0 +1,211 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 39, 39);
+    color: aliceblue;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    background-color: rgb(28, 27, 27);
+    border-radius: 10px;
+    position: sticky;
+    height: 60px;
+    z-index: 1;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+    background-color: beige;
+    margin-top: 4px;
+    margin-left: 8px;
+    border-radius: 20px;
+    overflow: hidden;
+    }
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+.search{
+    position: relative;
+    display: flex;
+}
+.search img{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    inset: 14px 0px 0px 80px;
+    cursor: pointer;
+    float: right;
+}
+.search input{
+    width:120px;
+    height: 45px;
+    margin-right: -120px;
+    margin-top: 3px;
+    font-size: 20px;
+    border-radius: 20px;
+    outline: none;
+    padding-left: 10px;
+    transition: all 1s;
+}
+.search input:focus{
+    width: 400px;
+    border: 3px solid rgb(5, 5, 5);
+}
+.search hover img:focus{
+    display: none;
+}
+
+
+.navegattion{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+.navegattion p{
+    margin-inline: 30px;
+    margin-block: 12px;
+    cursor: pointer;
+    transition: .1s;
+    padding-bottom: 2px;;
+}
+.navegattion p:hover{
+       border-bottom: 2px solid rgb(151, 163, 249);
+}
+.navegattion p a{
+    text-decoration: none;
+    color: aliceblue;
+}
+.top-continer{
+    display: flex;
+}
+.intro{
+    width: 50%;
+    height: 90vh;
+   background-color: rgb(64, 64, 64);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+  
+}
+.intro h1{
+ font-size: 50px;
+
+}
+.intro h2{
+    left: 650px;
+    top :550px;
+    position: absolute;
+    font-size: 35px;
+    color: red;
+    background-color: rgb(58, 57, 57);
+    rotate: -30deg;
+    padding: 5px;
+    font-family:cursive;
+    box-shadow: 3px 0px 15px 3px whitesmoke;
+   
+}
+.intro p{
+    font-size: 30px;
+    margin: 20px;
+}
+.intro button{
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgb(249, 249, 252);
+    border-radius: 20px;
+    animation: glow 2s infinite;
+}
+@keyframes glow{
+    0%{
+        background-color:white ;
+    }
+    20%{
+        background-color:rgb(226, 86, 31) ;
+    }
+    40%{
+        background-color:rgb(125, 143, 24) ;
+    }
+    60%{
+        background-color:rgb(20, 110, 65) ;
+    }
+    80%{
+        background-color:rgb(113, 165, 228) ;
+    }
+    100%{
+        background-color:rgb(50, 16, 225) ;
+    }
+    0%{
+        box-shadow: 0px 0px 10px fuchsia , 0px 0px 20px white , 0px 0px 30px blue , 0px 0px 30px black ;
+    }
+    50%{
+        box-shadow: 0px 0px 10px rgb(167, 67, 40) , 0px 0px 20px rgb(45, 81, 26) , 0px 0px 30px rgb(227, 77, 162) , 0px 0px 30px rgb(231, 200, 200) ;
+    }
+    100%{
+        box-shadow: 0px 0px 10px rgb(219, 94, 48) , 0px 0px 20px rgb(109, 142, 42) , 0px 0px 30px rgb(28, 138, 70) , 0px 0px 30px rgb(33, 105, 168) ;
+    }
+}
+.picture{
+    width: 50%;
+    height: 90vh;
+    
+}
+.picture img{
+    width: 100%;
+    height: 100%;
+}
+.product{
+    display: flex;
+    flex-direction: column;
+}
+.product h1{
+    font-size: 40px;
+    align-self: center;
+   
+}
+.new-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 21%;
+    margin: 1.5%;
+    background-color:  rgb(58, 57, 57);
+    box-shadow:0px 0px 10px rgb(249, 249, 249);
+    border-radius: 10px;
+    overflow: hidden;
+    transition:.5s ease-in-out;
+}
+.product-div img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition:.7s ease-in;
+    transform: rotatey(180deg);
+}
+.product-div h1,h2, h3  is(:hover){
+    opacity: 0;
+}
+.product-div img:hover{
+    opacity: 1;
+}
+.product-div:hover{
+    cursor: pointer;
+    transform: rotatey(180deg);
+}
+
